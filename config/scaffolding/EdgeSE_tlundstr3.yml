@@ -1,6 +1,11 @@
 version: "1.0"
 info:
   model: int-scaffold
+services:
+- serviceName: edge.se_tlundstr3.integrations:FirstSample
+  packages:
+  - name: EdgeSE_tlundstr3
+    version: "1.0"
 packages:
 - name: EdgeSE_tlundstr3
   gitServerName: tlundstr_git
@@ -8,3 +13,9 @@ packages:
   gitUsername: tlundstr
   gitToken: edge.scaffolding.EdgeSE_tlundstr3.tlundstr_git.gitToken
   gitBranch: main
+- name: T2Utilities
+  gitServerName: tlundstr_git
+  gitUrl: https://github.com/tlundstr
+  gitUsername: tlundstr
+  gitToken: edge.scaffolding.T2Utilities.tlundstr_git.gitToken
+  gitBranch: master
